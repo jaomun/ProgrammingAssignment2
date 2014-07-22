@@ -1,0 +1,18 @@
+> a<-makeCacheMatrix(matrix(1:4,2,2))
+> ginv(matrix(1:4,2,2))
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
+> cacheSolve(a)
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
+> ginv(matrix(2:5,2,2))
+     [,1] [,2]
+[1,] -2.5    2
+[2,]  1.5   -1
+> cacheSolve(a)
+getting cached data
+     [,1] [,2]
+[1,]   -2  1.5
+[2,]    1 -0.5
